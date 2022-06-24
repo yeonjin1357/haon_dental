@@ -1,0 +1,173 @@
+.txt_red { color:red; }
+.txt_green { color:#008000; }
+/* 버튼영역 */
+.mara_btn_area {margin:10px 0 0 0;padding:10px 0 9px;border:0px solid #e6e6e6;text-align:center; }
+button { border:1px solid #888888; padding:5px 7px; }
+button:hover { border:1px solid #dd6666; background:#dd6666; color:#ffffff; }
+textarea { width:100%; padding:8px;  }
+label { cursor:pointer; }
+input[type=checkbox] { cursor:pointer; }
+.fa-clock-o { font-size:15px;vertical-align:middle; }
+
+.empty_table {padding:85px 0 !important;}
+.frm_essential {padding-right:10px; background:url(./img/bg_formEssential.gif) no-repeat 100% 4px;}
+
+/* list */
+#mara_list {margin:0;padding:0;}
+#mara_list table {width:100%;border-spacing:0;border-collapse:collapse;}
+#mara_list table caption {overflow:hidden;font-size:0;line-height:0;}
+.mara_rl th {padding:5px 0 3px 0;border:1px solid #e6e6e6;text-align:center;line-height:1.6em;background:#f5f5f5;}
+.mara_rl td {padding:5px 7px 3px 7px;border: 1px solid #e6e6e6;text-align:center;vertical-align:middle;line-height:1.6em;}
+.mara_rl a {color:#466c8a;}
+
+/* write */
+#mara_write {margin:0;padding:0;height:100%;}
+#mara_write h2.guide {position:relative;width:100px;height:30px;}
+#mara_write h2.guide span {position:absolute;top:0;left:0;width:100%;height:100%;}
+#mara_write h2.rm_select {position:relative;float:left;width:100px;height:30px;margin:5px 0 0;}
+#mara_write h2.rm_select span {position:absolute;top:0;left:0;width:100%;height:100%;}
+#mara_write h2.info {position:relative;width:100px;height:30px;margin:15px 0 0;}
+#mara_write h2.info span {position:absolute;top:0;left:0;width:100%;height:100%;}
+#mara_write h2.important {position:relative;margin-top:15px;width:100px;height:30px;}
+#mara_write h2.important span {position:absolute;top:0;left:0;width:100px;height:30px;}
+#mara_write p.select {float:right;padding:0;}
+#mara_write .explain { 
+	margin:0 0 15px 0;padding:10px 10px 10px 30px;height:40px; border:1px solid #ebebeb;background:#fafafa;line-height:1.6em;
+	height:auto;
+}
+#mara_write .explain li {margin:0;padding:0;}
+#mara_write .explain strong {color:#ff0000;}
+#mara_write table{width:100%;border-spacing:0;border-collapse:collapse;}
+#mara_write table caption {overflow:hidden;font-size:0; line-height:0;}
+#mara_write .btn { padding:7px 12px; }
+.mara_rw thead th, .mara_rw tfoot td {padding:7px 0 5px 0;border:1px solid #e6e6e6;background:#f5f5f5;font-weight:bold;text-align:center;line-height:1.6em;}
+.mara_rw td {padding:7px 0 5px 0;border:1px solid #e6e6e6;text-align:center;line-height:1.6em;}
+.mara_rw td.left {padding:7px 10px 5px 10px;text-align:left;}
+.mara_rw td.red {color:#ff0000;}
+.mara_rw td.blue {color:#0000FF;}
+.mara_rw td select {width:80%;}
+.mara_info th {padding:7px 10px 5px 10px;border:1px solid #e6e6e6;background:#f5f5f5;font-weight:bold;line-height:1.6em;text-align:center;}
+.mara_info td {padding:7px 10px 5px 10px;border:1px solid #e6e6e6;line-height:1.6em;}
+.mara_info span {color:#666;}
+.mara_info input {padding:2px 0 2px 4px;border:1px solid #888;}
+
+
+/* view */
+#mara_view { width:80%; margin:auto; }
+#mara_view caption { text-align:left; padding:0px 0px 10px 0px; font-size:13px;}
+#mara_view H2 { margin:20px 0px 10px 0px; }
+#mara_view .explain {margin:0;height:auto; padding:10px 10px 10px 30px;border:1px solid #ebebeb;background:#fafafa;line-height:1.6em;}
+#mara_view .explain li {margin:0;padding:0;}
+#mara_view .explain span {color:#ff0000;}
+
+#mara_view table { width:100%; margin:10px 0px 20px 0px; border-spacing:0; border-collapse:collapse; }
+#mara_view th { height:40px;font-size:12px; text-align:right;background:#eeeeee;  border:1px solid #cccccc; padding:8px 10px 8px 0px; }
+#mara_view td { font-size:12px; text-align:left; border:1px solid #cccccc; padding:8px 10px 8px 10px; }
+#mara_view select { padding:4px 5px 4px 3px;font-size:12px;}
+#mara_view input[type="text"] { border:1px solid #888888;padding:5px 5px 5px 3px;font-size:12px;background:#ffffff;}
+#mara_view input[type="password"] { border:1px solid #888888;padding:5px 5px 5px 3px;font-size:12px;background:#ffffff;}
+#mara_view input[type="radio"] { border:0px !important; padding:5px 0px !important; }
+
+#mara_view #jobs_list { padding:10px 0px 0px 50px; }
+#mara_view ul { padding:0px; margin:0px; }
+#mara_view ul li { padding:4px 0px; margin:0px; list-style:none }
+#mara_view .jobs { float:left; width:280px; padding:5px; }
+#mara_view .jobs h1 { font-size:14px; color:blue; margin:7px 0px; }
+#mara_view .office_name { font-size:14px; color:blue; }
+#mara_view .job_list { text-align:center !important; padding:0px !important; }
+
+#button_zone { width:100%; text-align:center; margin: 20px 0px 10px 0px; }
+#button_zone button { padding:10px 20px; font-size:14px; color:#ffffff; }
+#button_zone .btn_submit { background:#dd6666; border:1px solid #dd6666; }
+#button_zone .btn_cancel { background:#dddddd; border:1px solid #dddddd; color:#888888 !important; }
+#button_zone .btn_edit	{ background:#dd6666; border:1px solid #dd6666; }
+#button_zone .btn_delete	{ background:#dddddd; border:1px solid #dddddd; color:#888888 !important; }
+#button_zone .btn_list	{ background:#dd6666; border:1px solid #dd6666; }
+#button_zone .btn_cal	{ background:#dd6666; border:1px solid #dd6666; }
+
+
+#except li { display:inline-block; padding:0px 30px 0px 0px !important; }
+
+/* 개인정보처리방침 약관 동의 */
+#tbl_agree { margin:0px 0px 20px 0px !important; }
+#tbl_agree th { text-align:center; }
+#tbl_agree caption {  }
+
+
+/* calendar */
+#mara_cal {margin:0 0px 30px 0px;padding:0; background:#ffffff; }
+#mara_cal .title { padding:0 0 15px 0; font-size:1.8em; font-weight:bold; text-align:center; }
+
+
+
+/* 안내글 */
+#mara_cal .explain { margin-bottom:10px;padding:10px;min-height:40px;border:1px solid #ebebeb;background:#fafafa;line-height:1.6em;text-align:left;}
+#mara_cal .explain li { padding:0px;margin:0;list-style:none; }
+
+
+/* 달력 디자인 */
+#mara_cal table {width:100%;border-spacing:0;border-collapse:collapse;}
+#mara_cal table caption {font-size:0;line-height:0;}
+#mara_cal th {padding:10px 0px;border:1px solid #e6e6e6;line-height:1.6em;height:0;font-weight:bold;text-align:center;background:#f7f7f7;}
+#mara_cal th.red {color:#ff0000;}
+#mara_cal th.blue {color:#0000ff;}
+#mara_cal td { padding:0px 0px 8px 0px;height:auto;height:100px;border:1px solid #e6e6e6;line-height:1.5em;vertical-align:top;}
+#mara_cal td.gray {color:#999;}
+#mara_cal td.null {background:#ffffff;}
+#mara_cal td p {margin:0;padding:0px 0px 0px 4px;line-height:1.6em;}
+#mara_cal td .title_day {padding:0 0 5px;}
+#mara_cal td .day {padding:0 0 5px 0;}
+#mara_cal td span.open {color:#333;}
+#mara_cal td span.close {color:#999;}
+
+
+#mara_cal ul { padding:3px 4px 0px 4px; margin:0; height:24px; border-bottom:0px solid #efefef; }
+#mara_cal ul li { padding:0; margin:0; list-style:none; }
+#mara_cal .m_list { padding:0px 0px 0px 4px ; height:auto; }
+#mara_cal .member_list { list-style:none; padding:0px; }
+#mara_cal .member_list a { color:#444444; }
+#mara_cal .li_day { float:left; }
+
+/* 예약가능 버튼 */
+#mara_cal .li_btn { float:right;}
+#mara_cal .li_btn:hover { background:#00980E; border-radius:5px; } 
+#mara_cal .li_btn a { color:#008080;}
+#mara_cal .li_btn a:hover { color:#ffffff;}
+
+#mara_cal .li_closed { float:right;color:#ffffff;background:#dd6666;padding:1px 3px;border-radius:6px; }/* 정기휴무 */
+#mara_cal .li_closed2 { float:right;color:#ffffff;background:#888;padding:1px 3px;border-radius:6px; }/* 정기휴무 */
+#mara_cal .li_closed a { color:#ffffff; }
+
+#mara_cal .sunday { color:red;}  /* 일요일 날자 색상 */
+#mara_cal .sat { color:blue;}  /* 토요일 날자 색상 */
+#mara_cal .sunday_td { background:#FFF9F9; } /* 일요일 배경색 색상 */
+#mara_cal .sat_td { background:#F9F9FF; } /* 토요일 배경색 색상 */
+
+#mara_cal .gray {color:#999; float:left;} /* 최소예약일 이전 날자 색상 */
+#mara_cal .today_td { height:120px; background:#FFFFB0 !important; } /*오늘 배경색 색상 */
+#mara_cal .booking_list { padding:4px 10px; } /* 버튼 */
+
+/* 달력 상단 ( 이전달, 오늘날짜로, 다음달 ) 버튼 */
+#mara_cal .prev_text { cursor:pointer; font-size:13px; color:#ffffff;  background:#888888; padding:5px 15px; border-radius:8px; vertical-align:middle; }
+#mara_cal .prev_text:hover { transition:all 0.5s; background:#dd6666; padding:5px 15px; border-radius:8px; vertical-align:middle; }
+#mara_cal .next_text { cursor:pointer; font-size:13px; color:#ffffff;  background:#888888; padding:5px 15px; border-radius:8px; vertical-align:middle; }
+#mara_cal .next_text:hover {  transition:all 0.5s; background:#dd6666; padding:5px 15px; border-radius:8px; vertical-align:middle; }
+#mara_cal .center_today { margin:0px 15px; cursor:pointer;  vertical-align:middle; }
+#mara_cal .center_today:hover { color:red; transition:all 0.5s;}
+
+#mara_cal .top_msg { float:left; width:70%; height:30px; line-height:20px;  }
+
+/* interval switch 예약현황 자동 갱신 스위치 */
+div.interval_switch { width:30%; text-align:right; float:right; }
+span#set_interval { display:inline-block; width:35px; height:24px; line-height:24px; border-radius:3px; text-align:center; cursor:pointer; font-weight:bold; }
+span.interval_on { transition:all 1s; background:#dd6666; color:#ffffff; }
+span.interval_on:before {  content:"ON";}
+span.interval_off { transition:all 1s; background:#888888; color:#ffffff; }
+span.interval_off:before { content:"OFF";}
+
+/* 회사정보변경 바로가기 버튼 */
+span.office_edit { display:inline-block; background:#888888; color:#fff; width:100px; height:24px; line-height:24px; border-radius:3px; text-align:center; cursor:pointer; font-weight:bold; }
+span.office_edit:hover { transition:all 0.7s; background:#dd6666; color:#ffffff; }
+
+span#cal_wide { display:inline-block; background:#888888; color:#fff; width:40px; height:24px; line-height:24px; border-radius:3px; text-align:center; cursor:pointer; font-weight:bold; }
+span#cal_wide:hover { transition:all 0.7s; background:#dd6666; color:#ffffff; }

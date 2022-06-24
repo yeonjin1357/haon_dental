@@ -1,0 +1,219 @@
+#mb_login {
+	margin: 0px auto; padding: 100px 0px; max-width: 500px;
+}
+#mb_login h1 {
+	margin: 0px 0px 20px; font-size: 1.3em;
+}
+#mb_login h2 {
+	margin: 0px;
+}
+#mb_login p {
+	padding: 10px 0px; line-height: 1.5em;
+}
+#mb_login #login_fs {
+	background: rgb(255, 255, 255); border-width: 1px 1px 0px; border-style: solid solid none; border-color: rgb(207, 222, 216) rgb(207, 222, 216) currentColor; margin: 0px; padding: 20px 20px 20px 95px; border-image: none; position: relative;
+}
+#mb_login #login_fs legend {
+	margin: 0px; padding: 0px; line-height: 0; text-indent: -9999em; overflow: hidden; font-size: 0px; position: absolute;
+}
+#mb_login #login_fs label {
+	letter-spacing: -0.1em;
+}
+#mb_login #login_fs .login_id {
+	left: 95px; top: 26px; position: absolute;
+}
+#mb_login #login_fs .login_pw {
+	left: 95px; top: 52px; position: absolute;
+}
+#mb_login #login_fs .frm_input {
+	margin: 0px 0px 5px 80px; width: 162px; display: block;
+}
+#mb_login #login_fs .btn_submit {
+	top: 20px; width: 60px; height: 53px; right: 95px; position: absolute;
+}
+#mb_login #login_info {
+	background: rgb(245, 246, 250); margin: 0px 0px 30px; padding: 20px; border: 1px solid rgb(207, 222, 216); border-image: none;
+}
+#mb_login #login_info div {
+	text-align: right;
+}
+#mb_login_notmb {
+	background: rgb(255, 255, 255); margin: 0px 0px 20px; padding: 20px; border: 1px solid rgb(207, 222, 216); border-image: none; position: relative;
+}
+#mb_login_notmb #guest_privacy {
+	margin: 0px 0px 10px; padding: 10px; border: 1px solid rgb(233, 233, 233); border-image: none; height: 150px; overflow: auto;
+}
+#mb_login_notmb .btn_confirm {
+	padding: 10px 0px 0px;
+}
+#mb_login_od {
+	background: rgb(255, 255, 255); border-width: 1px 1px 0px; border-style: solid solid none; border-color: rgb(207, 222, 216) rgb(207, 222, 216) currentColor; margin: 0px; padding: 20px 20px 20px 95px; border-image: none; position: relative;
+}
+#mb_login_od legend {
+	line-height: 0; overflow: hidden; font-size: 0px; position: absolute;
+}
+#mb_login_od label {
+	letter-spacing: -0.1em;
+}
+#mb_login_od .od_id {
+	left: 95px; top: 26px; position: absolute;
+}
+#mb_login_od .od_pwd {
+	left: 95px; top: 52px; position: absolute;
+}
+#mb_login_od .frm_input {
+	margin: 0px 0px 5px 80px; display: block;
+}
+#mb_login_od .btn_submit {
+	left: 335px; top: 20px; width: 52px; height: 49px; position: absolute;
+}
+#mb_login_odinfo {
+	background: rgb(245, 246, 250); margin: 0px 0px 30px; padding: 20px; border: 1px solid rgb(207, 222, 216); border-image: none;
+}
+#mb_login_odinfo div {
+	text-align: right;
+}
+@media screen and (max-width:40em)
+{
+#mb_login {
+	margin: 0px auto; padding: 20px 0px;
+}
+#mb_login h1 {
+	margin: 0px 0px 15px; padding: 0px 10px;
+}
+#mb_login #login_fs {
+	padding: 10px;
+}
+#mb_login #login_fs .login_id {
+	left: 0px; top: 0px; display: block; position: inherit;
+}
+#mb_login #login_fs .login_pw {
+	left: 0px; top: 0px; display: block; position: inherit;
+}
+#mb_login #login_fs .frm_input {
+	margin: 0px 0px 5px; width: 60%;
+}
+#mb_login #login_fs .btn_submit {
+	top: 24px; width: 35%; height: 67px; right: 10px;
+}
+#mb_login_notmb {
+	background: rgb(247, 247, 247); margin: 30px 0px; padding: 15px 10px; border: 1px solid rgb(207, 222, 216); border-image: none;
+}
+#mb_login_notmb .btn_confirm {
+	margin: 20px 0px 0px; text-align: right;
+}
+#mb_login_od {
+	margin: 20px 5px;
+}
+#mb_login_od .frm_input {
+	padding: 0px; width: 80%; height: 1.8em; line-height: 1.8em; margin-bottom: 5px;
+}
+#mb_login_od .btn_submit {
+	padding: 0px !important; top: 0px; width: 18%; height: 4em !important; text-align: center; right: 0px; position: absolute;
+}
+}
+.login-sns-tit {
+	width: 100%; height: 27px; border-bottom-color: rgb(230, 230, 230); border-bottom-width: 1px; border-bottom-style: solid; position: absolute;
+}
+.login-sns .txt {
+	background: rgb(255, 255, 255); margin: 0px auto; top: 17px; width: 52px; text-align: center; position: relative;
+}
+.login-sns {
+	width: 100%; padding-bottom: 10px; border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none; position: relative;
+}
+.sns-wrap {
+	margin: 37px 0px 0px; text-align: center; position: relative;
+}
+.sns-icon {
+	text-decoration: none; vertical-align: middle; display: inline-block;
+}
+.sns-icon:hover {
+	text-decoration: none;
+}
+.sns-icon .ico {
+	background: url("../oauth/img/sns_logo.gif") no-repeat; vertical-align: middle; display: block;
+}
+.sns-icon .txt {
+	line-height: 0; overflow: hidden; font-size: 0px; vertical-align: middle; position: absolute;
+}
+.sns-icon .txt i {
+	font-style: normal;
+}
+.reg-form .sns-wrap {
+	margin: 0px; text-align: left;
+}
+.reg-form .sns-icon {
+	text-decoration: none; vertical-align: middle; display: inline-block;
+}
+.reg-form .sns-icon:hover {
+	text-decoration: none;
+}
+.reg-form .sns-icon .ico {
+	background: url("../oauth/img/sns_logo.gif") no-repeat; vertical-align: middle; display: block;
+}
+.reg-form .sns-icon-not .ico {
+	background: url("../oauth/img/sns_logo_not.png") no-repeat; vertical-align: middle; display: block;
+}
+.reg-form .sns-icon .txt {
+	line-height: 0; overflow: hidden; font-size: 0px; vertical-align: middle; position: absolute;
+}
+.reg-form .sns-icon .txt i {
+	font-style: normal;
+}
+.sns-wrap-org .sns-gg {
+	background: rgb(221, 84, 67); border-color: rgb(202, 44, 25);
+}
+.sns-wrap-org .sns-gg .ico {
+	background-position: -58px 0px;
+}
+.sns-wrap-org .sns-fb {
+	background: rgb(58, 88, 151); border-color: rgb(46, 83, 147);
+}
+.sns-wrap-org .sns-fb .ico {
+	background-position: 0px 0px;
+}
+.sns-wrap-over .sns-icon {
+	border-color: rgb(220, 220, 220);
+}
+.sns-wrap-over .sns-icon-not {
+	border-color: rgb(139, 139, 139);
+}
+.sns-wrap-over .sns-naver {
+	border-color: rgb(24, 164, 0);
+}
+.sns-wrap-over .sns-naver .ico {
+	background-position: -300px 0px;
+}
+.sns-wrap-over .sns-gg .ico {
+	background-position: -58px 0px;
+}
+.sns-wrap-over .sns-gg {
+	border-color: rgb(202, 44, 25);
+}
+.sns-wrap-over .sns-fb .ico {
+	background-position: 0px 0px;
+}
+.sns-wrap-over .sns-fb {
+	border-color: rgb(46, 83, 147);
+}
+.sns-wrap-over .sns-kk .ico {
+	background-position: -150px 0px;
+}
+.reg-form .sns-icon-not {
+	border-color: rgb(139, 139, 139);
+}
+.sns-wrap-32 .sns-icon {
+	margin: 0px 1px; overflow: hidden;
+}
+.sns-wrap-32 .sns-icon .txt {
+	margin: 0px 10px 0px 0px; letter-spacing: -0.1em; font-size: 0.95em; display: inline-block;
+}
+.sns-wrap-32 .sns-icon .ico {
+	width: 138px; height: 34px;
+}
+.social-login-loading {
+	width: 100%; height: auto; text-align: center;
+}
+.social-login-loading p {
+	padding: 40px 0px 0px; line-height: 30px; margin-top: 10px; display: inline-block;
+}

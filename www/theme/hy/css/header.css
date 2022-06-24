@@ -1,0 +1,150 @@
+/* ======================================================================================================================================================================== */
+/* ============================================================ header style start (yangyunji) =========================================================================== */
+/* ======================================================================================================================================================================== */
+
+nav {width: 100%;}
+.spinner-master input[type=checkbox] {display: none;}
+
+
+/* ==================================== menu (PC) ============================================= */
+#header {position: fixed; z-index: 999999; top: 0; width: 100%; transition: top .5s ease-out;}
+#header img {width: 120px; height: auto; margin-top: 20px;}
+.hd_color{background: linear-gradient( to bottom, rgba(136, 140, 156, 0.9), rgba(204, 204, 204, 0.64) ); box-shadow: 5px 5px 20px -22px;}
+.hd_color2{background: linear-gradient( to bottom, rgba(136, 140, 156, 0.9), rgba(204, 204, 204, 0.64) ); box-shadow: 5px 5px 20px -22px;}
+.mobile-gnb , #m_logo {display: none;}
+
+/* ===================== gnb ===================== */
+#pc-gnb {width: 100%; position: absolute; right: 3%;}
+#pc-gnb ul {display: flex; justify-content: flex-end; align-items: center; padding: 0.2% 0; align-items: center; height: 120px;}
+#pc-gnb a {font-size: 14px; display:inline-block; padding:0 10px; color:#555; line-height:35px;}
+#pc-gnb a:hover {color:#4aa4e2; transition: all 0.2s ease;}
+#bo_v_info strong a{color: #555;}
+
+/* ===================== menu ===================== */
+.menu {display: flex; height: 120px; transition: all ease 0.3s;}
+.menu:hover {height: 450px; transition: all ease 0.3s;}
+#logo {max-height: 100%; margin: 0 auto;}
+.logoli{display: flex; align-items: center;}
+.logoli > a{display: inherit;}
+
+/* 1depth */
+.menu .dropdown {display: flex; width: 100%; overflow: hidden; justify-content: center;}
+.menu .dropdown > li {min-width: 14.5%; text-align: center; position: relative; height: 100px;}
+.menu .dropdown > li:not(.logoli):hover {background-color: rgba(45, 50, 73, 0.9); transition: all 0.5s ease; height: 450px;}
+.menu .dropdown > li:not(.logoli):hover * {color: #fff;}
+.menu .dropdown > li > a {line-height: 120px; font-weight: 500;}
+
+/* 2depth */
+.menu .dropdown ul li {padding: 4% 0;}
+.menu .dropdown ul li a {position: relative;}
+.menu .dropdown ul li a::after {content: ''; display: block; width: 0; height: 1px; background-color: #fff; position: absolute; left: 50%; transform: translate(-50%, 0); bottom: 0;}
+.menu .dropdown ul li:hover a::after {width: 100%; transition: all 0.3s ease;}
+
+/* ================== sub-menu ===================== */
+/* tab-menu */
+.tab-menu-wrap {position:relative; height: 50px;}
+.tab-menu {position: absolute; top: 0; width: 100%; z-index: 9999;}
+.tab-menu * {font-size: 15px;}
+.tab-menu::before {content: ''; background-color: #f3f7fb; display: block; width: 100%; position: absolute; height: 50px; z-index: -4; left: 0; top: 0; border-bottom: 1px solid #dcdcdc;}
+.tab-menu .home-btn {display:inline-block; padding: 15px 15px; text-align:left; border-left: 1px solid #dcdcdc; border-right: 1px solid #dcdcdc; height: 50px;} 
+.tab-menu .home-btn img {width: 50px;height: auto;}
+.tab-menu .inner div p.btn:hover, .tab-menu .home-btn.hover {background-color: #f3f7fb !important;}
+.tab-menu .inner {display: flex;}
+.tab-menu .inner div {width: 100%;}
+.tab-menu .inner div ul {cursor:pointer; position:relative; width: 100%;}
+.tab-menu .inner div p.btn {min-height: 50px; position: relative !important; color:#333 !important; padding: 14px 10px !important; border-right: 1px solid #dcdcdc !important; cursor: pointer;}
+.tab-menu .inner div p.btn::after {transition: all ease 0.5s; transform: translate(0, -50%); content: ''; position: absolute; top:50%; right: 2%; width: 22px; height: 22px; background: url(../img/sub_navi_off.png) 0 0 no-repeat;}
+.tab-menu .inner div:hover p.btn::after {background: url(../img/sub_navi_on.png) 0 0 no-repeat; transition: all ease 0.5s;}
+.tab-menu .inner div ul {display: none; border: 1px solid #dcdcdc;}
+.tab-menu .inner div ul li a {display: block; color: #000; padding: 7px 10px; background-color: #f3f7fb;}
+.tab-menu .inner div ul li a:hover {background-color: #6aa6e2; color: #fff;}
+
+.menu{max-width: 1400px !important;}
+.menu .dropdown > li > a{color: #fff;}
+.menu .dropdown ul li a{color: #fff;}
+#pc-gnb a{color: #fff;}
+/* #pc-gnb{display: none;} */
+
+
+
+/* ============================== Mobile size : 1200px ============================== */
+
+@media screen and (max-width:1200px){
+	
+	.logoli{display: none;}
+	
+	.menu .dropdown > li > a{color: #111 !important;}
+	.menu .dropdown ul li a{color: #111 !important;}
+	#pc-gnb {display: none;}
+	nav {position: absolute;}
+	#m_logo {display: block; padding: 10px 0; text-align: center;}
+	#m_logo img {width: 205px; padding-right: 0;}
+	#logo {display: none;}
+	.menu {display: none; padding: 0 !important;}
+	.menu.active {display: block; background: #fff; height: 100%;}
+	.menu.active, .dropdown ul.active {max-height: 55em;}
+	#header {background: linear-gradient( to bottom, rgba(186, 190, 196, 0.7), rgba(224, 224, 224, 0.33) ); box-shadow: 5px 5px 20px -22px;}
+	#header img{margin-top: 0;}
+	
+	
+	
+	/* ==================================== menu (Mobile) ============================================= */
+	/* top-menu */
+	.mobile-gnb.active {display: flex; background: #525252; color: #fff;}
+	.mobile-gnb li {font-size: 15px;  width:50%; text-align: center; height: 45px; line-height: 45px;}
+	.mobile-gnb li a {color: #fff;}
+
+	/* menu style all */
+	#menu:hover {height: 100%;}
+	#menu .dropdown {display: block;}
+	#menu .dropdown:hover::before {display: none;}
+	#menu .dropdown > li {height: 100%;}
+	#menu .dropdown > li:hover * {color: #111;}
+	#menu .dropdown > li:hover {height: auto; background-color: #fff;}
+	#menu .dropdown > li > a {line-height: 1.5; display: block; padding: 2% 0;}
+	#menu .dropdown > li > a:after {content: '+'; position: absolute; top: 0; right: 0; display: block; padding: 1.2% 2%; font-size: 25px;}
+	#menu .dropdown > li > a.active:after {content: '-'; z-index: 99; padding: 1.2% 2.6%;}
+	
+	#menu .dropdown ul {border-top: 1px solid #ddd;}
+	#menu .dropdown ul li {padding: 0;}
+	#menu .dropdown ul li:last-child {border-bottom: 1px solid #ddd;}
+	#menu .dropdown ul li a {width: 100%; display: block; height: 100%; padding: 1% 1.5%;}
+	#menu .dropdown ul li a::after {display: none;}
+	#menu .dropdown ul li:hover a {background: #a89483; color: #fff !important; transition: all 0.1s ease;}
+	
+	/* 3depth style */
+	.menu, .dropdown ul {overflow: hidden; max-height: 0; background-color: #fff;}
+	.dropdown ul {display: inherit; position: relative; left: auto; top: auto; border: none; padding: 0px;}
+	
+
+	/* menu button style */
+	.spinner-master * {transition: all 0.3s; box-sizing: border-box;}
+	.spinner-master {position: relative; margin: 10px; height: 30px; width: 30px; float: right; margin-top: -45px;}
+	.spinner-master label {cursor: pointer; position: absolute; z-index: 99; height: 100%; width: 100%; top: 0; right:0;}
+	.spinner-master .spinner {position: absolute; height: 4px; width: 100%; padding: 0; background-color: #fff;}
+	.spinner-master .diagonal.part-1 {position: relative; float: left;}
+	.spinner-master .horizontal {position: relative; float: left; margin-top: 4px;}
+	.spinner-master .diagonal.part-2 {position: relative; float: left; margin-top: 4px;}
+	.spinner-master input[type=checkbox]:checked ~ .spinner-spin > .horizontal {opacity: 0;}
+	.spinner-master input[type=checkbox]:checked ~ .spinner-spin > .diagonal.part-1 {transform: rotate(135deg); -webkit-transform: rotate(135deg); margin-top: 10px;}
+	.spinner-master input[type=checkbox]:checked ~ .spinner-spin > .diagonal.part-2 {transform: rotate(-135deg); -webkit-transform: rotate(-135deg); margin-top: -12px;}	
+}
+
+
+/* ============================== Mobile size : 1024px ============================== */
+@media screen and (max-width:1024px){
+	.tab-menu .inner {padding: 0;}
+}
+
+/* ============================== Mobile size : 769px ============================== */
+@media screen and (max-width:769px){
+	#quick_menu {display: none;}
+	.tab-menu * {font-size: 12px;}
+	.tab-menu .inner div p.btn:after {width: 18px; height: 18px; background-size: cover;}
+	.tab-menu .inner div:hover p.btn:after {width: 18px; height: 18px; background-size: cover;}
+}
+@media screen and (max-width:425px){
+	#m_logo img{width: 160px;}
+	.spinner-master{margin-top: -40px;}
+}
+

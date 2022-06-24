@@ -1,0 +1,45 @@
+#office_table { width:100%; margin:auto; margin:15px 0 0 0; }
+#office_table table { width:100%; border-spacing:0; border-collapse:collapse; }
+#office_table th { font-size:12px; height:40px; text-align:right; background:#eeeeee; border:1px solid #cccccc; padding:6px 8px 6px 0; }
+#office_table td { font-size:12px; height:40px; text-align:left; background:#ffffff; border:1px solid #cccccc; padding:6px 10px 8px 10px; }
+#office_table caption { text-align:left; padding:0px 0px 5px 0px; }
+#office_table select { padding:2px 5px; }
+#office_table label { cursor:pointer; }
+#office_table input[type="text"] { border:0px; font-size:12px; background:#ffffff; width:100%; height:25px !important; padding:0px 7px; }
+#office_table button { padding:4px 8px;}
+#office_table button:hover { background:#dd6666; color:#fff; border:2px solid #dd6666; }
+#office_table .btn_submit { background:#dd6666; padding:10px 20px; border-radius:3px; border:0px; font-size:14px; }
+#office_table .btn_submit:hover{ transition:all 0.8s; background:#FE3745; border:0px; }
+#office_table .btn_cal { background:#888; color:#fff; padding:10px 20px; border-radius:3px; border:0px; font-size:14px; }
+#office_table .btn_cal:hover { transition:all 0.8s; background:#333; border:0px; }
+
+/* 주소 */
+#office_table .btn_frmline { padding:0px 5px; height:25px; }
+#office_table #reg_mb_zip	{ width:80px; } /* 우편번호 */
+#office_table #reg_mb_addr1	{ width:300px; } /* 주소1 */
+#office_table #reg_mb_addr2	{ width:300px; } /* 주소2 */
+#office_table #reg_mb_addr3	{ width:300px; } /* 주소3 */
+
+#office_table .booking_closed {float:left;margin:0px 0px 10px 0px; }
+#office_table .booking_closed_daya {float:left;display:none; }
+#office_table .booking_closed_dayb {float:left;display:none; }
+#office_table .button_zone { text-align:center;padding:15px 0; }
+#office_table  #holiday { width:100%; margin-top:15px;}
+
+#holiday_list { margin:0px; min-height:120px !important; width:100%; padding:0px;}
+#holiday_list table { width:100%; border-spacing:0; border-collapse:collapse; }
+#holiday_list th { font-size:12px; height:40px; text-align:center; background:#eeeeee; border:1px solid #cccccc; }
+#holiday_list td { font-size:12px; height:30px; text-align:center; background:#ffffff; border:1px solid #cccccc; }
+#holiday_list caption { text-align:left; font-weight:bold; padding:10px 0px 10px 0px; font-size:12px; }
+#holiday_list i { font-size:15px; cursor:pointer; }
+#holiday_list .no_data { height:100px; }
+
+#holiday_write { width:99%; }
+#holiday_write table { width:100%; border-spacing:0; border-collapse:collapse; }
+#holiday_write th { font-size:12px; height:50px; text-align:center; background:#eeeeee; border:1px solid #cccccc; padding:0px 0px 0px 0px; }
+#holiday_write td { font-size:12px; height:50px; text-align:left; background:#ffffff; border:1px solid #cccccc; padding:12px 10px; }
+#holiday_write caption { text-align:left; padding:10px 0px; }
+#holiday_write button { padding:6px 10px; }
+#holiday_write input[type=text] { padding:4px 10px; width:100px; }
+#holiday_write .button_zone { display:none; }
+#holiday_write .help { margin:10px 0px }

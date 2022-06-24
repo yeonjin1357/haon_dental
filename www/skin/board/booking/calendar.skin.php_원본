@@ -1,0 +1,115 @@
+<?php
+// 스킨파일은 단독으로 실행할 수 없다
+if(defined('_GNUBOARD_') == false) {
+    exit('스킨파일은 단독으로 실행할 수 없습니다.');
+}
+
+// 달력출력에 필요한 종속파일을 실행한다
+include_once($board_skin_path . '/calendar.include.php');
+$holiday_title = ($is_admin)? "title='임시휴무일 및 예약시간제외 설정'":"";
+
+// 임시공휴일 및 예약시간제외 관련 배열
+$holiday = holiday_array($month_first_day, $month_last_day, $office_no);
+
+// 예약현황 배열
+$booking = booking_array($month_first_day, $month_last_day, $office_no);
+
+// 회사정보변경 URL
+$office_edit_url = $board_skin_url.'/office/office_edit.php?bo_table='.$bo_table;
+?>
+<div id="dialog_m" style="display:none;z-index:1000;">
+	<iframe id="ifm_m" width="100%" height="99%"  marginwidth="0" marginheight="0" frameborder="0" scrolling="auto"></iframe>
+</div><!-- dialog 팝업용 -->
+
+<script src="<?php echo $board_skin_url; ?>/script.js"></script>
+<link rel="stylesheet" href="<?php echo $board_skin_url; ?>/style.css">
+
+<div id="mara_cal">
+	<input type="hidden" name="min" class="cal_min" value="<?php echo $limit['min'];?>" />
+	<input type="hidden" name="max" class="cal_max" value="<?php echo $limit['max'];?>" />
+	<input type="hidden" name="office_no" class="office_no" value="<?php echo $office_no;?>" />
+	<input type="hidden" name="ym" class="cal_ym" value="<?php echo $year.'-'.$month.'-'; ?>" />
+
+	<div class="title">
+		<span class="prev_text" onclick="movePage('<?php echo $prev; ?>','<?php echo $office_no; ?>');"><i class='fa fa-backward' aria-hidden='true'></i> <?php echo $prev_text; ?></span>
+
+		<span class="center_today" onclick="movePage('<?php echo G5_TIME_YMD; ?>','<?php echo $office_no; ?>');" title="오늘날짜로 이동"><?php echo $year; ?>년 <?php echo $month; ?>월</span>
+
+		<span class="next_text" onclick="movePage('<?php echo $next; ?>','<?php echo $office_no; ?>');"><?php echo $next_text; ?> <i class='fa fa-forward' aria-hidden='true'></i></span>
+    </div>
+
+    <ul class="explain">
+		<?php
+		if($start_date>0 && $start_date > 0) {
+			echo "<li><span style='color:blue'>".$off['office_name']."</span>의 온라인 예약 가능일은 최소 <span style='color:red'>".$start_date."</span>일후부터 최대 <span style='color:red'>".$end_date."</span>일후까지 가능합니다.</li>";
+		}
+		if($start_date==0 && $start_date > 0) {
+			echo "<li><span style='color:blue'>".$off['office_name']."</span>의 온라인 예약은 <span style='color:red'>당일예약</span>이 가능하며, 최대 <span style='color:red'>".$end_date."</span>일후까지 가능합니다.</li>";
+		}
+		if($start_date>0 && $start_date == 0) {
+			echo "<li><span style='color:blue'>".$off['office_name']."</span>의 온라인 예약 가능일은 최소 <span style='color:red'>".$end_date."</span>일후부터 가능합니다.</li>";
+		}
+		if($start_date==0 && $start_date == 0) {
+			echo "<li><span style='color:blue'>".$off['office_name']."</span>의 온라인 예약은 <span style='color:red'>당일 예약</span>이 가능합니다.</li>";
+		}
+		?>
+	</ul>
+
+	<?php if($is_admin) { ?>
+	<div class="interval_switch">
+		<span class="office_edit" onclick='go_edit("<?php echo $office_edit_url;?>");'>회사정보변경</span>
+		<span id="set_interval" class="interval_off"></span><!-- 스위치 -->
+	</div>
+	<?php } ?>
+
+	<table>
+	    <caption>온라인정비 예약 현황</caption>
+		<colgroup>
+			<col width="15%">
+			<col width="14%">
+			<col width="14%">
+			<col width="14%">
+			<col width="14%">
+			<col width="14%">
+			<col width="15%">
+		</colgroup>
+	    <thead>
+		    <tr>
+		        <th class="red">일요일</th>
+		        <th>월요일</th>
+		        <th>화요일</th>
+		        <th>수요일</th>
+		        <th>목요일</th>
+		        <th>금요일</th>
+		        <th class="blue">토요일</th>
+		    </tr>
+	    </thead>
+	    <tbody>
+		    <tr>
+		    <?php
+			for($i = 0; $i < $total; $i++) {
+				if($i>0 && $i%7 == 0){ echo '</tr><tr>'; }
+				if($i >= $min && $i < $max) {
+					$var = "{$year}-{$month}-" . sprintf('%02d', $day); // 달력 날짜(년-월-일로 변환).
+					$yoil = date('w', strtotime($var)); // 요일 번호 추출
+					list($y, $bg) = yoil_class($yoil); // 요일별 글자색상과 배경색에 관련된 class 명
+					if(G5_TIME_YMD == $var) { $bg = 'today_td'; } // 오늘이면 배경색 변경
+					echo '<td class="'.$bg.'">';
+					echo '<ul class="day_title">';
+						list($holiday_info, $booking_info) = day_info($var, $day, $limit['min'], $limit['max']);
+						echo $holiday_info;
+					echo "</ul>";
+					echo "<ul class='m_list'>";
+						echo $booking_info;
+					echo '</ul>';
+					echo '</td>';
+				    $day++;
+				} else {
+					echo '<td class="null">&nbsp;</td>';
+				}
+			}
+			?>
+			</tr>
+		</tbody>
+	</table>
+</div>

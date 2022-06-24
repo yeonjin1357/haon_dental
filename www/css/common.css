@@ -1,0 +1,237 @@
+
+* {
+	margin: 0px; padding: 0px;
+}
+body {
+	color: rgb(255, 255, 255); font-family: "Noto Sans KR", sans-serif;font-weight: 300; font-size: 12px; letter-spacing:-1px; word-break: keep-all; 
+}
+img {
+	border: currentColor; border-image: none; vertical-align: middle;
+}
+form {
+	border: 0px currentColor; border-image: none; display: block;
+}
+fieldset {
+	border: 0px currentColor; border-image: none; display: block;
+}
+ul {
+	list-style: none;
+}
+ol {
+	list-style: none;
+}
+li {
+	list-style: none;
+}
+div {
+	margin: 0px; padding: 0px; color: rgb(255, 255, 255); font-family: "Noto Sans KR", sans-serif; font-size: 12px;
+}
+p {
+	margin: 0px; padding: 0px; color: rgb(255, 255, 255); font-family: "Noto Sans KR", sans-serif; font-size: 12px;
+}
+h1 {
+	margin: 0px; padding: 0px; color: rgb(255, 255, 255); font-family: "Noto Sans KR", sans-serif; font-size: 12px;
+}
+h2 {
+	margin: 0px; padding: 0px; color: rgb(255, 255, 255); font-family: "Noto Sans KR", sans-serif; font-size: 12px;
+}
+h3 {
+	margin: 0px; padding: 0px; color: rgb(255, 255, 255); font-family: "Noto Sans KR", sans-serif; font-size: 12px;
+}
+h4 {
+	margin: 0px; padding: 0px; color: rgb(255, 255, 255); font-family: "Noto Sans KR", sans-serif; font-size: 12px;
+}
+h5 {
+	margin: 0px; padding: 0px; color: rgb(255, 255, 255); font-family: "Noto Sans KR", sans-serif; font-size: 12px;
+}
+h6 {
+	margin: 0px; padding: 0px; color: rgb(255, 255, 255); font-family: "Noto Sans KR", sans-serif; font-size: 12px;
+}
+ul {
+	margin: 0px; padding: 0px; color: rgb(255, 255, 255); font-family: "Noto Sans KR", sans-serif; font-size: 12px;
+}
+ol {
+	margin: 0px; padding: 0px; color: rgb(255, 255, 255); font-family: "Noto Sans KR", sans-serif; font-size: 12px;
+}
+li {
+	margin: 0px; padding: 0px; color: rgb(255, 255, 255); font-family: "Noto Sans KR", sans-serif; font-size: 12px;
+}
+dl {
+	margin: 0px; padding: 0px; color: rgb(255, 255, 255); font-family: "Noto Sans KR", sans-serif; font-size: 12px;
+}
+dt {
+	margin: 0px; padding: 0px; color: rgb(255, 255, 255); font-family: "Noto Sans KR", sans-serif; font-size: 12px;
+}
+dd {
+	margin: 0px; padding: 0px; color: rgb(255, 255, 255); font-family: "Noto Sans KR", sans-serif; font-size: 12px;
+}
+p {
+	margin: 0px; padding: 0px; color: rgb(255, 255, 255); font-family: "Noto Sans KR", sans-serif; font-size: 12px;
+}
+span {
+	margin: 0px; padding: 0px; color: rgb(255, 255, 255); font-family: "Noto Sans KR", sans-serif; font-size: 12px;
+}
+legend {
+	width: 0px; height: 0px; line-height: 0; overflow: hidden; font-size: 0px; visibility: hidden; position: absolute;
+}
+hr {
+	width: 0px; height: 0px; line-height: 0; overflow: hidden; font-size: 0px;
+}
+table {
+	width: 100%; border-collapse: separate; border-spacing: 0;
+}
+select {
+	color: rgb(102, 102, 102); font-family: "Noto Sans KR", sans-serif; font-size: 11px; vertical-align: middle;
+}
+textarea {
+	border: 1px solid rgb(204, 204, 204); border-image: none; color: rgb(102, 102, 102); font-family: "Noto Sans KR", sans-serif; font-size: 12px; vertical-align: middle;
+}
+input {
+	border: 1px solid rgb(204, 204, 204); border-image: none; color: rgb(102, 102, 102); font-family: "Noto Sans KR", sans-serif; font-size: 11px; vertical-align: middle;
+}
+blockquote {
+	quotes: none;
+}
+q {
+	quotes: none;
+}
+ins {
+	
+}
+del {
+	text-decoration: line-through;
+}
+input {
+	border-radius: 0px; box-shadow: none; -webkit-appearance: none;
+}
+button {
+	border-radius: 0px; box-shadow: none; -webkit-appearance: none;
+}
+.bd_wrap {
+	margin: 0px auto; width: 1200px; height: 100%; position: relative;
+}
+.input_initialize {
+	margin: 0px; padding: 0px; border: currentColor; border-image: none; width: 13px; height: 13px;
+}
+.hidden {
+	line-height: 0; overflow: hidden; font-size: 0px; visibility: hidden; position: absolute;
+}
+a:link {
+	color: rgb(102, 102, 102); text-decoration: none;
+}
+a:visited {
+	color: rgb(102, 102, 102); text-decoration: none;
+}
+a:hover {
+	color: rgb(102, 102, 102); text-decoration: none;
+}
+a:focus {
+	color: rgb(102, 102, 102); text-decoration: none;
+}
+a:active {
+	color: rgb(102, 102, 102); text-decoration: none;
+}
+.mg_t0 {
+	margin-top: 0px !important;
+}
+.mg_t16 {
+	margin-top: 16px !important;
+}
+.mg_t25 {
+	margin-top: 25px !important;
+}
+.mg_t30 {
+	margin-top: 30px !important;
+}
+.mg_b0 {
+	margin-bottom: 0px !important;
+}
+.mg_b10 {
+	margin-bottom: 10px !important;
+}
+.mg_b15 {
+	margin-bottom: 15px !important;
+}
+.mg_b17 {
+	margin-bottom: 17px !important;
+}
+.mg_b20 {
+	margin-bottom: 20px !important;
+}
+.mg_b25 {
+	margin-bottom: 25px !important;
+}
+.mg_b30 {
+	margin-bottom: 30px !important;
+}
+.mg_b35 {
+	margin-bottom: 35px !important;
+}
+.mg_b40 {
+	margin-bottom: 40px !important;
+}
+.mg_r0 {
+	margin-right: 0px !important;
+}
+.mg_r30 {
+	margin-right: 30px !important;
+}
+.mg_r40 {
+	margin-right: 40px !important;
+}
+.mg_r50 {
+	margin-right: 50px !important;
+}
+.pd_b0 {
+	padding-bottom: 0px !important;
+}
+.png24 {
+	tmp: expression(setPng24(this));
+}
+.tleft {
+	text-align: left;
+}
+.tright {
+	text-align: right;
+}
+.tcenter {
+	text-align: center;
+}
+.gray_color {
+	color: rgb(85, 85, 85);
+}
+.clear {
+	clear: both;
+}
+h1 {
+	margin: 0px; color: rgb(255, 255, 255); font-family: "Noto Sans KR"; font-size: 5em;
+}
+.intro p {
+	color: rgb(255, 255, 255);
+}
+.section {
+	
+}
+.controlArrow.prev {
+	left: 50px;
+}
+.controlArrow.next {
+	right: 50px;
+}
+#infoMenu li a {
+	color: rgb(255, 255, 255);
+}
+.contents_scroll {
+	width: 100%; height: 100%; overflow: hidden; font-size: 14px; position: relative;
+}
+.contents_scroll .contents {
+	height: 100%; position: relative;
+}
+.font-nixL{font-family: "NIXGONL-Vb";font-weight: normal;}
+.font-nixM{font-family: "NIXGONM-Vb";font-weight: normal;}
+.font-nixB{font-family: "NIXGONB-Vb";font-weight: normal;}
+.lineBlock{display: inline-block;font-weight: normal;}
+.redFont{color: #cd0000;}
+.pointFont{color: #ffd800;}
+.align_center{text-align: center;}
+.block{display: block;font-size: 24px;}

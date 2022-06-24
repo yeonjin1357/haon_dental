@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* 내용관리 */
+#ctt {margin:10px 0;padding:20px;background:#fff}
+.ctt_admin {text-align:right}
+#ctt header h1 {position:absolute;font-size:0;line-height:0;overflow:hidden}
+#ctt_con {padding:10px 0;line-height:1.6em; border: 1px solid rgb(221, 221, 221);  padding: 15px; height: 700px; overflow: hidden auto; word-break: break-all; line-height: 22px;}
+#ctt_con img{max-width:100%;height:auto}
+.ctt_img {text-align:center}
+footer {padding-bottom: 50px !important; margin-top: 100px !important;}
+#container{width: 100%;max-width:1200px;margin: auto;padding: 80px 20px;}
+#container_title{
+	font-size: 25px;
+    font-weight: 500;
+    margin: 0 0 20px;
+    padding: 20px;
+    border-top: 3px solid #333;
+    border-bottom: 1px solid #dde4e9;
+    text-align: left;
+    background: #fff;}
+
+
+	@media (max-width:1200px) {
+	#container_title { font-size: 25px; margin-bottom: 10px;text-align: center; }
+	  footer { margin-top: 50px !important;}
+	}
